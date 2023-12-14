@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Vaisiai</title>
+</head>
+
+<body>
+    <div clas="container">
+        <header class="container-fluid my-4">
+            <nav class="navbar bg-body-tertiary ">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="#">Search</a>
+                </div>
+            </nav>
+        </header>
+        <section class="container">
+            <div id="foodSearch" class="search d-flex btn btn-light rounded-pill shadow p-4 my-4">
+                <form class="d-flex" role="search">
+                    <img src="img/3.search.svg" alt="search button">
+                    <input id="searchInput" class="form-control bg-light border-0 me-2" type="text"
+                        placeholder="Search for food..." aria-label="Search">
+                </form>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button id="allFruits" class="btn btn-success" type="button">ALL</button>
+            </div>
+        </section>
+        <div id="card-list" class="recipes row row-cols-2 row-cols-md-3 row-cols-xl-4 g-4">
+            <article class="col">
+                <div class="card rounded-5 shadow">
+                    <ul class="mainDescripcion card-text p-4">
+                        <li class="d-flex">name</li>
+                        <li class="d-flex">id</li>
+                        <li class="d-flex">family</li>
+                        <li class="d-flex">order</li>
+                        <li class="d-flex">genus</li>
+                    </ul>
+                    <ul class="nutritions card-text p-4">
+                        <li class="d-flex">calories</li>
+                        <li class="d-flex">fat</li>
+                        <li class="d-flex">sugar</li>
+                        <li class="d-flex">carbohydrates</li>
+                        <li class="d-flex">protein</li>
+                    </ul>
+                </div>
+            </article>
+           
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
